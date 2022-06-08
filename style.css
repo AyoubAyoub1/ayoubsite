@@ -332,3 +332,41 @@ line-height: normal;
         background-color:orange ;
     }
 }
+
+@media print {
+    #BoxLogo {
+        width: 100%;
+        height: auto;
+    }
+    header{
+        height: auto;
+    }
+    #logo{
+    float:none;
+        height: 150px;
+        width: 150px;
+    }
+    #LogoH1{
+       float: none;
+line-height: normal;
+    }
+    nav{
+        width: 100%;
+    }
+    
+    aside{
+        width: 90%;
+        float: none;
+        margin: auto;
+        height: auto;
+    }
+    main{
+        height: auto;
+    }
+    article{
+        width: 90% !important;
+        right: 4.8%;
+        height:auto !important;
+    }
+ 
+}
