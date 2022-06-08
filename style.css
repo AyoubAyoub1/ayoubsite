@@ -1,0 +1,334 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header {
+background-image: linear-gradient( to right, rgb(9, 219, 226),rgb(25, 234, 98));
+height: 100px;
+width: 100%;
+
+}
+#BoxLogo{
+float: right;
+height: 100%;
+width: 35%;
+background-color: rgb(255, 255, 255);
+line-height: 100px;
+text-align: center;
+font-family: cursive;
+}
+#logo{
+    height:90px;
+    float: right ;
+    border-radius: 50%;
+  margin: 5px;
+}
+#logoH1{
+    float: right;
+    width: 15%;
+}
+nav{
+    text-align: center;
+    line-height: 100px;
+    width: 65%;
+}
+nav ul{
+    list-style-type: none;
+} 
+nav li{
+    display: inline-block;
+    width: 100px;
+    height: 100%;
+    margin: 0px 10px;
+    
+}
+nav a{
+color:white;
+text-decoration: none;
+display: inline-block;
+width: 100px;
+height: 100%;
+border-radius: 20px;
+text-align: center;
+font-weight: bold;
+font-size: large;
+transition: 300ms  background-color,300ms color;
+}
+nav a:hover {
+    background-color: white;
+    color :rgb(0, 0, 0);
+}
+aside{
+background-color: rgb(255, 255, 255);
+height: calc(100% - 11px);
+width: 30%;
+margin: 5px;
+margin-left: 15px;
+text-align:center ;
+float: left;
+}
+aside img{
+    width: 90%;
+    margin-top: 10px;
+    box-shadow: 6px 6px 4px  rgb(45, 44, 44);
+}
+
+#AsideP{
+    width: 90%;
+    height: 100px;
+    font-size: 21px;
+    transform: translateY(35%);
+    padding: 10px;
+}
+#ShiarA{
+    color:rgb(0, 0, 0) ;
+    text-decoration:underline;
+}
+#ShiarA:hover{
+
+    color: red;
+    text-decoration:underline;
+}
+#article{
+width: 67%;
+height: calc(100% - 11px );
+float :right;
+margin: 5px;
+text-align: center;
+position: relative;
+}
+
+main{
+    height: 400px;
+    width: 100%;
+    background-color: rgba(9, 219, 226, 0.741);
+    border-top: 3px solid white ;
+    animation-name: MainBackground;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    text-align: center;
+}
+.div{
+width:30%;
+height: 300px;
+background-color: rgb(58, 69, 77);
+float: left;
+margin: 12px;
+transform: translateY(13%);
+border-radius: 50px;
+position: absolute;
+box-shadow: 10px 10px 8px rgb(44, 44, 44);
+line-height: 400px;
+}
+#html{
+width: 90%;
+border-radius: 50px;
+margin-top: 10px;
+box-shadow: 5px 5px 5px rgb(255, 119, 0);
+height: 123px;
+
+}
+#css{
+    width: 90%;
+    border-radius: 50px;
+    margin-top: 10px;
+    height: 123px; 
+    box-shadow: 5px 5px 5px rgb(0, 85, 255);
+
+}
+#javascript{
+    width: 90%;
+    border-radius: 50px;
+    margin-top: 10px;
+    height: 123px; 
+    box-shadow: 5px 5px 5px orange ;
+
+}
+
+
+#html1:hover{
+
+    animation-name: ticket1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#css1:hover{
+
+    animation-name: ticket2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#javascript1:hover{
+
+    animation-name: ticket3;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes MainBackground{
+    
+    0%{background-color: rgba(9, 219, 226, 0.741);}
+    25%{background-color: rgba(9, 219, 226, 0.786);}
+    50%{background-color: rgba(25, 234, 98, 0.443);}
+    80%{background-color:rgba(25, 234, 98, 0.755);} 
+}
+@keyframes ticket1{
+    0%{-webkit-transform:rotateY(0);transform:rotateY(0)}
+    50%{ background-color:rgb(255, 119, 0) ;} 
+    100%{-webkit-transform:rotateY(-180deg);transform:rotateY(-180deg);background-color:rgb(255, 119, 0) ;}}
+    @keyframes ticket2{
+        0%{-webkit-transform:rotateY(0);transform:rotateY(0)}
+        50%{ background-color:rgb(0, 85, 255) ;} 
+        100%{-webkit-transform:rotateY(-180deg);transform:rotateY(-180deg);background-color:rgb(0, 85, 255) ;}}
+        @keyframes ticket3{
+            0%{-webkit-transform:rotateY(0);transform:rotateY(0)}
+            50%{ background-color:orange ;} 
+            100%{-webkit-transform:rotateY(-180deg);transform:rotateY(-180deg);background-color:orange ;}}
+
+            
+@media only screen and (max-width:1017px) and (min-width:800px) {
+    #BoxLogo {
+        width: 50%;
+    }
+    nav{
+        width: 50%;
+    }
+    aside{
+        width: 90%;
+        float: none;
+        margin: auto;
+        height: auto;
+    }
+    main{
+        height: 1000px;
+    }
+    article{
+        width: 90% !important;
+        right: 4.8%;
+        height:auto !important;
+    
+}}
+
+@media only screen and (max-width:800px) and (min-width:500px) {
+    #BoxLogo {
+        width: 100%;
+        height: auto;
+    }
+    header{
+        height: auto;
+    }
+    #logo{
+    float:none;
+        height: 150px;
+        width: 150px;
+    }
+    #LogoH1{
+       float: none;
+line-height: normal;
+    }
+    nav{
+        width: 100%;
+    }
+    
+    aside{
+        width: 90%;
+        float: none;
+        margin: auto;
+        height: auto;
+    }
+    main{
+        height: auto;
+    }
+    article{
+        width: 90% !important;
+        right: 4.8%;
+        height:auto !important;
+    }
+    
+    
+}
+@media only screen and (max-width:500px){
+    #BoxLogo {
+        width: 100%;
+        height: auto;
+    }
+    header{
+        height: auto;
+    }
+    #logo{
+    float:none;
+        height: 150px;
+        width: 150px;
+    }
+    #LogoH1{
+       float: none;
+line-height: normal;
+    }
+    nav{
+        width: 100%;
+        
+    }
+    nav ul li{
+    display:block;
+    width: 100%;
+    line-height: 70px;
+    }
+    li a{
+        width: 100%;
+         margin-top:5px ;
+    }
+    aside{
+        width: 90%;
+        float: none;
+        margin: auto;
+        height: auto;
+    }
+    #AsideP{
+        transform: translateY(5%);
+     
+    }
+    main{
+        height: 1404px;
+    }
+    #article{
+        width: 90% !important;
+        right: 4.8%;
+        
+        display:  block;
+        position:relative;
+    }
+    .div{
+        display:block;
+        width: 100%;
+        position: static;
+        margin: auto;
+        margin-top: 20px;
+        animation: none;
+        height: 150px;
+         line-height: inherit;
+    }
+
+    #html{
+       
+        width: 50%;
+    }
+    #css{
+       
+        width: 50%;
+    }
+    #javascript{
+       
+        width: 50%;
+    }
+    #html1:hover{
+        animation: none;
+        background-color:rgb(255, 119, 0);
+    }
+    #css1:hover{
+        animation: none;
+        background-color:rgb(0, 85, 255);
+    }
+    #javascript1:hover{
+        animation: none;
+        background-color:orange ;
+    }
+}
